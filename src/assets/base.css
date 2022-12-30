@@ -28,6 +28,9 @@ section {
 ul {
   list-style: none;
 }
+a{
+  color: inherit;
+}
 a,button{
   text-decoration: none;
   cursor: pointer;

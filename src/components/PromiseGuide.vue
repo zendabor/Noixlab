@@ -7,7 +7,7 @@ export default {
 }
 </script>
 <template>
-  <section class="PromiseGuide_section section">
+  <section>
     <div class="PromiseGuide_container">
       <h2 class="PromiseGuide_title">We create the world-class products
         <p>in digital field.</p></h2>

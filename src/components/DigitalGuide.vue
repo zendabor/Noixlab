@@ -12,16 +12,26 @@ export default {
       <span class="DigitalGuide_text text">Our product-driven development combines contemporary trends,business goals and the cutting-edge technology stack.</span>
       <span class="DigitalGuide_desc text">Since 2013, when our team released a first digital project for Milano Fashion Week, we craft high-tech and creativity with top-level partners and clientele.</span>
     </div>
+    <div class="background_wrap"></div>
   </section>
 </template>
 <style scoped>
   section {
-    background-image: url("/src/assets/backgrounds/Group 58726075.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+  }
+  .background_wrap {
+    background-image: url("/src/assets/backgrounds/Group 58726075.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
   .container {
     display: flex;
@@ -50,11 +60,22 @@ export default {
     color: #283534;
   }
   @media (max-width: 420px) {
+     section {
+       flex-direction: column;
+     }
     .container {
+      margin-bottom: 30px;
       margin-top: 50px;
       margin-left: 0;
       width: 100%;
       align-items: center;
+    }
+    .background_wrap{
+      position: unset;
+      height: 403px;
+      width: 145%;
+      background-position: 100%;
+      background-size: 218%;
     }
     .DigitalGuide_title {
       width: 80%;

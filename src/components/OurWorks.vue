@@ -404,6 +404,9 @@ export default {
     display: none;
   }
   @media (max-width: 420px) {
+      section {
+        padding-bottom: 20px;
+      }
     .OurWorks_list {
       flex-wrap: nowrap;
       overflow: auto;

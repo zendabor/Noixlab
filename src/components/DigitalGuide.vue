@@ -62,6 +62,7 @@ export default {
   @media (max-width: 420px) {
      section {
        flex-direction: column;
+       overflow: hidden;
      }
     .container {
       margin-bottom: 30px;

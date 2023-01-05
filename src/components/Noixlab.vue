@@ -36,6 +36,9 @@ export default {
   </section>
 </template>
 <style scoped>
+  .BlackCycle {
+    fill: black;
+  }
 .NewBlueCycle {
   position: absolute;
   width: 15px;
@@ -123,6 +126,9 @@ export default {
     position: absolute;
     top: 28%;
     right: -15px;
+    width: 28px;
+    height: 28px;
+    z-index: -1;
   }
   @media (max-width: 420px) {
     .Subtract {

@@ -1,5 +1,5 @@
 <template>
-  <svg width="71" height="71" viewBox="0 0 71 71" xmlns="http://www.w3.org/2000/svg">
+  <svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71" fill="inherit">
     <g filter="url(#filter0_b_2311_23869)">
       <circle cx="35.0312" cy="35.9687" r="35.0312" fill="inherit"/>
     </g>

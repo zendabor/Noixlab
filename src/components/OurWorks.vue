@@ -355,11 +355,11 @@ export default {
   .OurWorks_item:nth-child(odd) {
     margin-top: 60px;
   }
-  .OurWorks_img:hover {
+  .OurWorks_item:hover .OurWorks_img {
     filter: blur(30px);
     z-index: 1;
   }
-  .OurWorks_img:hover ~ .item_desc {
+  .OurWorks_item:hover .OurWorks_img ~ .item_desc {
     display: flex;
     z-index: 2;
   }
@@ -372,7 +372,7 @@ export default {
     right: 20px;
     animation: opa linear 0.3s;
     flex-direction: column;
-    pointer-events: none;
+    //pointer-events: none;
     gap: 30px;
     align-items: center;
     justify-content: center;

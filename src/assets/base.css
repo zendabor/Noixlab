@@ -14,6 +14,9 @@ body {
   font-family: Graphik, sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 div img {
   max-width: 100%;
@@ -37,6 +40,7 @@ a,button{
 }
 section {
   height: 100vh;
+  max-width: 1440px;
 }
 @media (max-width: 420px) {
   section {

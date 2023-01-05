@@ -38,7 +38,7 @@ export default {
           <a href="" class="contact_soc">Dribbble</a>
         </li>
       </ul>
-      <address>13333 Saticoy, suite #1 North Hollywood, CA 91605</address>
+      <address>13333 Saticoy, suite #1<br> North Hollywood, CA 91605</address>
       <div class="priv_pol">© 2022 Noixlab.<span>Privacy policy</span></div>
     </div>
   </section>
@@ -81,7 +81,7 @@ export default {
     gap: 20px;
     align-items: flex-end;
     grid-row-start: 2;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .contact_list {
     display: flex;
@@ -92,6 +92,7 @@ export default {
     justify-content: flex-end;
     grid-area: social_media;
     grid-row-start: 3;
+    margin-bottom: 30px;
   }
   .contact_item{
     position: relative;
@@ -137,7 +138,7 @@ export default {
   address {
     font-size: 20px;
     line-height: 120%;
-    width: 55%;
+    width: 100%;
     grid-area: address;
     grid-row-start: 4;
     text-align: end;

@@ -21,7 +21,7 @@ export default {
       </div>
       <div class="content_wrapper">
         <div class="text_wrap">
-          <span class="text_wrapper">A digital studio from LA with a strong focus on<p> product-driven</p>approach.</span>
+          <span class="text_wrapper">A digital studio from LA<br> with a strong focus on<br><p> product-driven</p>approach.</span>
           <span class="description">We build UX/UI, presentations,mobile apps & web that really change the game.</span>
         </div>
         <div class="img_wrapper">
@@ -66,9 +66,11 @@ export default {
     overflow: hidden;
   }
   .container {
-    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
   }
   .logo_wrap {
     display: flex;
@@ -76,6 +78,7 @@ export default {
     align-items: center;
     justify-content: flex-start;
     padding-left: 100px;
+    width: 100%;
   }
   .img_wrapper {
     position: relative;
@@ -106,7 +109,6 @@ export default {
     font-weight: 500;
   }
   .text_wrapper {
-    width: 60%;
     font-weight: 700;
     font-size: 32px;
     line-height: 160%;
@@ -129,7 +131,6 @@ export default {
     right: -15px;
     width: 28px;
     height: 28px;
-    z-index: -1;
   }
   @media (max-width: 420px) {
     .Subtract {

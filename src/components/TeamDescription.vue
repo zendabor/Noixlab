@@ -13,6 +13,7 @@ export default {
       <h3 class="team_title">The team of professionals<br>with creative passion in our hearts<br>and your product vision in mind.</h3>
       <div class="desc_wrap">
         <div class="desc_number">9</div>
+        <Elipce class="Elipce"></Elipce>
         <span class="desc_text">years with startups,<br>brands & enterprise</span>
       </div>
     </div>
@@ -39,7 +40,6 @@ export default {
       </li>
     </ul>
     <span class="team_ps">and just uncountable number of all kinds of presentations, slides and pitch decks versions.</span>
-    <Elipce class="Elipce"></Elipce>
   </section>
 </template>
 
@@ -65,8 +65,7 @@ export default {
   .team_desc {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 160px;
+    justify-content: space-between;
     margin-bottom: 160px;
   }
   .desc_wrap {
@@ -76,6 +75,7 @@ export default {
     gap: 20px;
   }
   .desc_number {
+    position: relative;
     font-weight: 700;
     line-height: 160%;
     font-size: 74px;
@@ -99,6 +99,7 @@ export default {
   .desc_text {
     font-size: 20px;
     line-height: 140%;
+    font-weight: bold;
   }
   .desc_wrap{
     display: flex;
@@ -106,7 +107,7 @@ export default {
   .team_item {
     position: relative;
     z-index: 2;
-    gap: 10px;
+    gap: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,7 +119,7 @@ export default {
     position: absolute;
     z-index: -1;
     left: -28%;
-    top: -14%;
+    top: -26%;
   }
   .team_item:last-child .BlueCycle{
     left: -8%;
@@ -136,7 +137,7 @@ export default {
   .team_list {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 80px;
   }
   .team_ps {
@@ -171,10 +172,10 @@ export default {
     }
     .Elipce {
       position: absolute;
-      top: -10%;
-      right: 10%;
-      rotate: 278deg;
-      width: 300px;
+      top: -17%;
+      right: 0;
+      rotate: 290deg;
+      width: 476px;
       z-index: -1;
     }
     .desc_text {

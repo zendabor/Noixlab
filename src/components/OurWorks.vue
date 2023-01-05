@@ -372,7 +372,6 @@ export default {
     right: 20px;
     animation: opa linear 0.3s;
     flex-direction: column;
-    //pointer-events: none;
     gap: 30px;
     align-items: center;
     justify-content: center;

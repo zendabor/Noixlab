@@ -22,37 +22,29 @@ export default {
       </div>
       <div class="contact_wrap">
         <h3 class="contact_title">Let’s Talk</h3>
-        <a href="hi@noixlab.com" class="contact_email">hi@noixlab.com</a>
-        <ul class="contact_list">
-          <li class="contact_item">
-            <a href="" class="contact_soc">Twitter</a>
-          </li>
-          <li class="contact_item">
-            <a href="" class="contact_soc">Medium</a>
-          </li>
-          <li class="contact_item">
-            <a href="" class="contact_soc">Facebook</a>
-          </li>
-          <li class="contact_item">
-            <a href="" class="contact_soc">Dribbble</a>
-          </li>
-        </ul>
-        <address>13333 Saticoy, suite #1 North Hollywood, CA 91605</address>
-        <span class="priv_pol">© 2022 Noixlab. Privacy policy</span>
+        <a href="mailto:hi@noixlab.com" type="email" class="contact_email">hi@noixlab.com</a>
       </div>
+      <ul class="contact_list">
+        <li class="contact_item">
+          <a href="" class="contact_soc">Twitter</a>
+        </li>
+        <li class="contact_item">
+          <a href="" class="contact_soc">Medium</a>
+        </li>
+        <li class="contact_item">
+          <a href="" class="contact_soc">Facebook</a>
+        </li>
+        <li class="contact_item">
+          <a href="" class="contact_soc">Dribbble</a>
+        </li>
+      </ul>
+      <address>13333 Saticoy, suite #1 North Hollywood, CA 91605</address>
+      <div class="priv_pol">© 2022 Noixlab.<span>Privacy policy</span></div>
     </div>
   </section>
 </template>
 
 <style scoped>
-  @media (max-width:420px) {
-    .container{
-      flex-direction: column;
-    }
-    .ZigZag,.Reactrangle,.BlueCycle,.BlackCycle {
-      display: none;
-    }
-  }
   section {
     height: 100%;
     position: relative;
@@ -67,27 +59,44 @@ export default {
   .container {
     width: 100%;
     height: 100%;
-    display: flex;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: space-evenly;*/
+    display: grid;
     align-items: center;
-    justify-content: space-evenly;
+    justify-items: end;
+    grid-gap: 0 17%;
+    grid-template-columns: 1fr 0.7fr;
+    grid-template-rows: repeat(6,.5fr);
+    grid-template-areas:
+    'img title'
+    'img social_media'
+    'img address'
+    'img policy';
   }
   .contact_wrap {
+    grid-area: title;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    text-align: right;
     align-items: flex-end;
+    grid-row-start: 2;
+    margin-bottom: 30px;
   }
   .contact_list {
     display: flex;
-    gap: 20px;
-    width: 50%;
+    gap: 20px 80px;
+    width: 76%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
+    grid-area: social_media;
+    grid-row-start: 3;
   }
   .contact_item{
     position: relative;
+    flex: 1;
+    text-align: end;
   }
   .contact_item:hover::before{
     content: "";
@@ -102,11 +111,13 @@ export default {
     font-size: 60px;
     line-height: 120%;
     font-weight: 800;
+    letter-spacing: -4px;
   }
   .contact_email{
     font-size: 40px;
     line-height: 120%;
     position: relative;
+    font-weight: 600;
   }
   .contact_email:before {
     content: "";
@@ -114,7 +125,7 @@ export default {
     bottom: 0;
     right: 0;
     background: black;
-    height: 3px;
+    height: 2px;
     width: 100%;
   }
   .contact_email:hover::before{
@@ -127,10 +138,23 @@ export default {
   address {
     font-size: 20px;
     line-height: 120%;
-    width: 56%;
+    width: 55%;
+    grid-area: address;
+    grid-row-start: 4;
+    text-align: end;
   }
   .img_wrap {
     position: relative;
+    grid-area: img;
+    grid-row-start: 1;
+    grid-row-end: 7;
+  }
+  .priv_pol {
+    grid-area: policy;
+    grid-row-start: 5;
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 400;
   }
   .ZigZag,.Reactrangle,.BlueCycle,.BlackCycle {
     position: absolute;
@@ -155,5 +179,86 @@ export default {
   .Reactrangle {
     top: 17%;
     right: -26%;
+  }
+  .priv_pol span {
+    border-bottom: 2px solid black;
+  }
+  @media (max-width:420px) {
+    section {
+      padding: 40px 52px 46px;
+      background-image: none;
+      overflow: hidden;
+    }
+    .container{
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      grid-gap: 24px;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5,min-content);
+      justify-content: center;
+      grid-template-areas:
+        'title'
+        'address'
+        'img'
+        'social_media'
+        'policy';
+    }
+    .contact_title {
+      grid-row-start: 1;
+    }
+    .contact_list {
+      grid-row-start: 4;
+    }
+    .priv_pol {
+      grid-row-start: 5;
+    }
+    .ZigZag,.Reactrangle,.BlueCycle,.BlackCycle {
+      display: none;
+    }
+    .img_wrap {
+      max-width: 330px;
+      overflow: hidden;
+      max-height: 198px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-row-start: 3;
+      grid-row-end: 3;
+    }
+    .img_wrap img {
+      width: 120%;
+      height: 100%;
+    }
+    .contact_wrap {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 32px;
+      grid-row-start: 1;
+    }
+    .contact_list {
+      flex-wrap: nowrap;
+      flex-direction: row;
+      width: 100%;
+      gap: 0 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    address {
+      width: 83%;
+      text-align: center;
+      grid-row-start: 2;
+    }
+    .contact_item {
+      text-align: center;
+      flex: 0;
+    }
+    .contact_item  a{
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 140%;
+    }
   }
 </style>

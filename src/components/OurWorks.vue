@@ -330,6 +330,7 @@ export default {
     align-items: center;
     justify-content: space-around;
     height: 100%;
+    padding-bottom: 90px;
   }
   .item_title-mobile {
     display: none;
@@ -405,7 +406,8 @@ export default {
   }
   @media (max-width: 420px) {
       section {
-        padding-bottom: 20px;
+        padding: 40px 0 20px;
+        background-color: #F9F9F9;
       }
     .OurWorks_list {
       flex-wrap: nowrap;

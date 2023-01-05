@@ -11,10 +11,10 @@ export default {
     <div class="PromiseGuide_container">
       <h2 class="PromiseGuide_title">We create the world-class products
         <p>in digital field.</p></h2>
-      <button class="PromiseGuide_btn">
+      <div class="PromiseGuide_btn">
         <span class="PromiseGuide_btn-text">We support startups around the world 🚀</span>
         <div class="svg_wrap"><Earth></Earth></div>
-      </button>
+      </div>
       <ul class="PromiseGuide_list">
         <li class="PromiseGuide_item">
           <span class="item_title">UI/UX Design</span>

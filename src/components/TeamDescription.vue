@@ -1,12 +1,10 @@
 <script>
 import BlueCycle from "@/components/icons/BlueCycle.vue";
-import Reactrangle from "@/components/icons/Reactrangle.vue";
-import Subtract from "@/components/icons/Subtract.vue";
 import Elipce from "@/components/icons/Elipce.vue";
 
 export default {
   name: "TeamDescription",
-  components: {Elipce, Subtract, Reactrangle, BlueCycle}
+  components: {Elipce, BlueCycle,}
 }
 </script>
 <template>
@@ -149,8 +147,73 @@ export default {
     color: #283534;
   }
   @media (max-width: 420px){
-    section{
-      display: none;
+    section {
+      padding: 60px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .team_desc {
+      flex-direction: column;
+      gap: 70px;
+      margin-top: 70px;
+      margin-bottom: 56px;
+    }
+    .desc_wrap {
+      flex-direction: column;
+    }
+    .team_title {
+      width: 100%;
+      padding: 0 36px;
+      font-size: 24px;
+      line-height: 120%;
+      text-align: center;
+    }
+    .Elipce {
+      position: absolute;
+      top: -10%;
+      right: 10%;
+      rotate: 278deg;
+      width: 300px;
+      z-index: -1;
+    }
+    .desc_text {
+      text-align: center;
+      width: 69%;
+      font-size: 14px;
+      line-height: 140%;
+      font-weight: bold;
+    }
+    .item_text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 140%;
+    }
+    .BlueCycle {
+      width: 16px;
+      height: 16px;
+      position: initial;
+    }
+    .team_list {
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .team_item {
+      align-items: center;
+    }
+    .item_number {
+      font-size: 32px;
+      line-height: 140%;
+      font-weight: 700;
+    }
+    .team_ps {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 140%;
+      text-align: center;
+      width: 60%;
     }
   }
 </style>

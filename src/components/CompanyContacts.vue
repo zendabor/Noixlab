@@ -111,7 +111,6 @@ export default {
     font-size: 60px;
     line-height: 120%;
     font-weight: 800;
-    letter-spacing: -4px;
   }
   .contact_email{
     font-size: 40px;

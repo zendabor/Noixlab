@@ -87,6 +87,7 @@ export default {
   .logo_title {
     font-weight: 300;
     font-size: 60px;
+    font-family: Geometria;
   }
   .text_wrap {
     width: 52%;

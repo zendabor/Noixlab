@@ -10,10 +10,10 @@ export default {
 <template>
   <section>
     <div class="team_desc">
-      <h3 class="team_title">The team of professionals with creative passion in our hearts and your product vision in mind.</h3>
+      <h3 class="team_title">The team of professionals<br>with creative passion in our hearts<br>and your product vision in mind.</h3>
       <div class="desc_wrap">
         <div class="desc_number">9</div>
-        <span class="desc_text">years with startups,brands & enterprise</span>
+        <span class="desc_text">years with startups,<br>brands & enterprise</span>
       </div>
     </div>
     <ul class="team_list">
@@ -99,7 +99,6 @@ export default {
   .desc_text {
     font-size: 20px;
     line-height: 140%;
-    width: 50%;
   }
   .desc_wrap{
     display: flex;
@@ -180,7 +179,6 @@ export default {
     }
     .desc_text {
       text-align: center;
-      width: 69%;
       font-size: 14px;
       line-height: 140%;
       font-weight: bold;

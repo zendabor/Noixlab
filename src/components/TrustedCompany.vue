@@ -95,7 +95,9 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 20% 0;
+  margin: 0 10% 0;
+  max-width: 1440px;
+  width: 100%;
 }
 .TrustedCompany_title {
   font-size: 40px;
@@ -107,8 +109,8 @@ section {
 .TrustedCompany_list {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  gap: 65px 75px;
+  width: 60%;
+  gap: 50px 75px;
   justify-content: space-evenly;
   margin-bottom: 70px;
 }
@@ -120,7 +122,7 @@ section {
 .line {
   height: 2px;
   background-color: black;
-  width: 35%;
+  width: 40%;
 }
 @media (max-width: 420px) {
   section {

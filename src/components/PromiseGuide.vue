@@ -8,9 +8,9 @@ export default {
 </script>
 <template>
   <section>
-    <div class="PromiseGuide_container">
-      <h2 class="PromiseGuide_title">We create the world-class products
-        <p>in digital field.</p></h2>
+    <div class="PromiseGuide_container container">
+      <h2 class="PromiseGuide_title PromiseGuide_title-desktop">We create the world-class products<br> <span>in digital field.</span></h2>
+      <h2 class="PromiseGuide_title PromiseGuide_title-mobile">We create<br> the world-class products<br> <span>in digital field.</span></h2>
       <div class="PromiseGuide_btn">
         <span class="PromiseGuide_btn-text">We support startups around the world 🚀</span>
         <div class="svg_wrap"><Earth></Earth></div>
@@ -57,15 +57,17 @@ export default {
   .PromiseGuide_container {
     position: relative;
     padding: 10% 5% 2%;
-    align-items: self-start;
+    align-items: center;
     height: 100%;
-    gap: 20% 0;
+    gap:0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2,1fr);
     grid-template-areas:
     "a a b"
     "c c c";
+    max-width: 1440px;
+    margin: 0 auto;
   }
   .PromiseGuide_container:after {
     content: '';
@@ -87,7 +89,10 @@ export default {
     font-size: 40px;
     line-height: 140%;
   }
-  .PromiseGuide_title p {
+  .PromiseGuide_title-mobile {
+    display: none;
+  }
+  .PromiseGuide_title span {
     background: -webkit-linear-gradient(#BAF2B5, #26AAD4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -156,23 +161,34 @@ export default {
   }
   @media (max-width:420px) {
     .PromiseGuide_container {
-      gap: 32px;
-      padding: 56px 24px 90px;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows:1fr;
+      grid-template-rows: 0.3fr 0.4fr 0.3fr;
       grid-template-areas:
-    "a"
-    "c"
-    "b";
+        "a"
+        "c"
+        "b";
+      align-items: center;
+      align-content: center;
+      gap: 0;
     }
     .PromiseGuide_list {
       align-items: self-start;
       flex-direction: column;
       gap: 20px;
     }
+    .PromiseGuide_item:last-child {
+      display: none;
+    }
     .PromiseGuide_title {
-      font-size: 20px;
+      font-size: 24px;
+      line-height: 140%;
+    }
+    .PromiseGuide_title-desktop {
+      display: none;
+    }
+    .PromiseGuide_title-mobile {
+      display: inline;
     }
     .item_text:first-child {
       margin-bottom: 0;
@@ -190,6 +206,9 @@ export default {
     }
     .PromiseGuide_btn {
       padding: 8px 16px;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      gap: 8px;
     }
     .PromiseGuide_btn-text {
       width: 59%;

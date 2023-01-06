@@ -1,65 +1,47 @@
 <script>
 import BlackCycle from "@/components/icons/BlackCycle.vue";
-import BlueCycle from "@/components/icons/BlueCycle.vue";
-import Line from "@/components/icons/Line.vue";
-import Subtract from "@/components/icons/Subtract.vue";
+import GraphTop from "@/components/icons/GraphTop.vue";
 
 export default {
   name: "Noixlab",
-  components: {Subtract, Line, BlueCycle, BlackCycle}
+  components: {GraphTop, BlackCycle}
 }
 </script>
 <template>
-  <section class="section noixlab_section">
+  <section>
     <div class="container">
       <div class="logo_wrap">
         <div class="svg_wrap">
           <BlackCycle class="BlackCycle"></BlackCycle>
-          <BlueCycle class="BlueCycle"></BlueCycle>
         </div>
         <h2 class="logo_title">noixlab</h2>
       </div>
       <div class="content_wrapper">
         <div class="text_wrap">
-          <span class="text_wrapper">A digital studio from LA<br> with a strong focus on<br><p> product-driven</p>approach.</span>
-          <span class="description">We build UX/UI, presentations,mobile apps & web that really change the game.</span>
+          <div class="text_wrapper">A digital studio from LA<br> with a strong focus on<br><span> product-driven</span> approach.</div>
+          <span class="description description-desktop">We build UI/UX, Mobile Apps & Web, Presentations<br> that really change the game.</span>
+          <span class="description description-mobile">We build UX/UI, presentations,<br>mobile apps & web<br> that really change the game.</span>
         </div>
         <div class="img_wrapper">
           <img src="/src/assets/img/image91.png" alt="">
-          <line class="line"></line>
-          <Subtract class="Subtract"></Subtract>
-          <BlackCycle class="NewBlackCycle"></BlackCycle>
-          <BlueCycle class="NewBlueCycle"></BlueCycle>
+            <GraphTop class="GraphTop"></GraphTop>
         </div>
       </div>
     </div>
   </section>
 </template>
 <style scoped>
+    .description-mobile {
+      display: none;
+    }
+  .GraphTop {
+    position: absolute;
+    top: 5%;
+    right: -18%;
+  }
   .BlackCycle {
     fill: black;
   }
-.NewBlueCycle {
-  position: absolute;
-  width: 15px;
-  bottom: 42%;
-  right: -6%;
-}
-.NewBlackCycle {
-  position: absolute;
-  width: 15px;
-  bottom: 42%;
-  right: -9%;
-}
-.Subtract {
-  position: absolute;
-  right: -16%;
-  top: 15%;
-}
-.line {
-  position: absolute;
-  top: 0;
-}
   section {
     display: flex;
     align-items: center;
@@ -71,6 +53,8 @@ export default {
     align-items: center;
     width: 100%;
     justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
   }
   .logo_wrap {
     display: flex;
@@ -104,7 +88,6 @@ export default {
   .description {
     font-size: 20px;
     line-height: 160%;
-    width: 70%;
     color: #283534;
     font-weight: 500;
   }
@@ -112,11 +95,9 @@ export default {
     font-weight: 700;
     font-size: 32px;
     line-height: 160%;
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
+    display: inline;
   }
-  .text_wrapper p {
+  .text_wrapper span {
     background: -webkit-linear-gradient(#BAF2B5, #26AAD4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -125,35 +106,39 @@ export default {
   .svg_wrap {
     position: relative;
   }
-  .BlueCycle {
-    position: absolute;
-    top: 28%;
-    right: -15px;
-    width: 28px;
-    height: 28px;
-  }
   @media (max-width: 420px) {
-    .Subtract {
-      right: -30%;
+    section {
+      padding: 90px 30px;
     }
-    .NewBlueCycle {
-      bottom: 15%;
+    .GraphTop {
+      width: 75px;
+      top: -25%;
+    }
+    .description-mobile {
+      display: inline;
+    }
+    .description-desktop {
+      display: none;
+    }
+    .logo_title {
+      font-size: 30px;
     }
     section {
-      padding: 100px 30px 50px;
+      padding: 100px 30px 90px;
     }
     .logo_wrap {
       padding: 0;
       margin-bottom: 48px;
+      justify-content: center;
+      gap: 20px;
     }
     .content_wrapper {
       padding: 0;
       flex-direction: column;
+      align-items: start;
     }
     .text_wrapper {
       font-size: 24px;
-      display: flex;
-      align-items: center;
     }
     .text_wrapper,.text_wrap{
       width: 100%;
@@ -164,10 +149,14 @@ export default {
       text-align: center;
       gap: 32px;
     }
+    .img_wrapper {
+      width: 260px;
+    }
     .description {
       font-size: 14px;
       margin-bottom: 40px;
-      width: 70%;
+      font-weight: 400;
+      line-height: 200%;
     }
   }
 </style>

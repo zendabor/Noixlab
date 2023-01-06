@@ -1,13 +1,9 @@
 <script>
-import ZigZag from "@/components/icons/ZigZag.vue";
-import Subtract from "@/components/icons/Subtract.vue";
-import Reactrangle from "@/components/icons/Reactrangle.vue";
-import BlackCycle from "@/components/icons/BlackCycle.vue";
-import BlueCycle from "@/components/icons/BlueCycle.vue";
+import GraphFooter from "@/components/icons/GraphFooter.vue";
 
 export default {
   name: "CompanyContacts",
-  components: {BlueCycle, BlackCycle, Reactrangle, Subtract, ZigZag}
+  components: {GraphFooter}
 }
 </script>
 <template>
@@ -15,10 +11,7 @@ export default {
     <div class="container">
       <div class="img_wrap">
         <img src="/src/assets/img/image726.png" alt="">
-        <BlueCycle class="BlueCycle"></BlueCycle>
-        <BlackCycle class="BlackCycle"></BlackCycle>
-        <Reactrangle class="Reactrangle"></Reactrangle>
-        <ZigZag class="ZigZag"></ZigZag>
+        <GraphFooter class="GraphFooter"></GraphFooter>
       </div>
       <div class="contact_wrap">
         <h3 class="contact_title">Let’s Talk</h3>
@@ -59,9 +52,6 @@ export default {
   .container {
     width: 100%;
     height: 100%;
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: space-evenly;*/
     display: grid;
     align-items: center;
     justify-items: end;
@@ -149,36 +139,18 @@ export default {
     grid-row-start: 1;
     grid-row-end: 7;
   }
+  .GraphFooter {
+    position: absolute;
+    fill: none;
+    right: -25%;
+    top: 5%;
+  }
   .priv_pol {
     grid-area: policy;
     grid-row-start: 5;
     font-size: 20px;
     line-height: 120%;
     font-weight: 400;
-  }
-  .ZigZag,.Reactrangle,.BlueCycle,.BlackCycle {
-    position: absolute;
-  }
-  .BlueCycle,.BlackCycle {
-    width: 121px;
-    height: 121px;
-  }
-  .BlackCycle {
-    right: -13%;
-    top: 6%;
-    fill: #283534;
-  }
-  .BlueCycle {
-    right: -15%;
-    top: 5%;
-  }
-  .ZigZag {
-    top: 21%;
-    right: -23%;
-  }
-  .Reactrangle {
-    top: 17%;
-    right: -26%;
   }
   .priv_pol span {
     border-bottom: 2px solid black;
@@ -206,6 +178,9 @@ export default {
     }
     .contact_title {
       grid-row-start: 1;
+      font-size: 24px;
+      line-height: 140%;
+      font-weight: 700;
     }
     .contact_list {
       grid-row-start: 4;
@@ -213,7 +188,7 @@ export default {
     .priv_pol {
       grid-row-start: 5;
     }
-    .ZigZag,.Reactrangle,.BlueCycle,.BlackCycle {
+    .GraphFooter {
       display: none;
     }
     .img_wrap {
@@ -247,7 +222,7 @@ export default {
       justify-content: space-between;
     }
     address {
-      width: 83%;
+      width: 100%;
       text-align: center;
       grid-row-start: 2;
     }
@@ -259,6 +234,11 @@ export default {
       font-size: 14px;
       font-weight: bold;
       line-height: 140%;
+    }
+    .contact_email{
+      font-size: 14px;
+      line-height: 140%;
+      font-weight: 500;
     }
   }
 </style>

@@ -6,11 +6,9 @@ export default {
 <template>
   <section>
     <div class="container">
-      <h3 class="DigitalGuide_title">
-        Let us guide You to Digital
-      </h3>
-      <span class="DigitalGuide_text text">Our product-driven development combines contemporary trends,business goals and the cutting-edge technology stack.</span>
-      <span class="DigitalGuide_desc text">Since 2013, when our team released a first digital project for Milano Fashion Week, we craft high-tech and creativity with top-level partners and clientele.</span>
+      <h3 class="DigitalGuide_title">Let us guide You<br> to Digital</h3>
+      <span class="DigitalGuide_text text">Our product-driven development<br> combines contemporary trends,<br>business goals and the cutting-edge<br> technology stack.</span>
+      <span class="DigitalGuide_desc text">Since 2013, when our team released<br> a first digital project for Milano Fashion Week,<br> we craft high-tech and creativity<br> with top-level partners and clientele.</span>
     </div>
     <div class="background_wrap"></div>
   </section>
@@ -48,15 +46,18 @@ export default {
     font-weight: bold;
     color: #283534;
   }
+  .text br {
+    display: none;
+  }
   .DigitalGuide_text {
-    font-weight: bold;
+    font-weight: 500;
   }
   .DigitalGuide_desc {
-    width: 70%;
+   width: 100%;
   }
   .text {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 140%;
     color: #283534;
   }
   @media (max-width: 420px) {
@@ -79,15 +80,26 @@ export default {
       background-size: 218%;
     }
     .DigitalGuide_title {
-      width: 80%;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 160%;
+      width: 100%;
       text-align: center
     }
+    .text br {
+      display: inline;
+    }
     .DigitalGuide_text {
-      width: 78%;
+      width: 100%;
       text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 160%;
     }
     .DigitalGuide_desc {
-      width: 86%;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 160%;
       text-align: center;
     }
   }

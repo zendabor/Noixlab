@@ -5,32 +5,16 @@ export default {
 </script>
 <template>
   <section>
-    <h3 class="OurWorks_title">Our Works</h3>
-    <ul class="OurWorks_list">
-      <li class="OurWorks_item">
-        <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
-        <div class="OurWorks_img">
-          <img src="/src/assets/img/01.png" alt="">
-        </div>
-        <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
-        <ul class="item_list item_list-mobile">
-          <li class="item_block">
-            <span class="block_text">UI / UX</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Mobile apps</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">CRM & Fleet dashboards</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Pitch deck & presentations</span>
-          </li>
-        </ul>
-        <div class="item_desc">
-          <h4 class="item_title">Quorum, 2021</h4>
-          <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
-          <ul class="item_list">
+    <div class="container">
+      <h3 class="OurWorks_title">Our Works</h3>
+      <ul class="OurWorks_list">
+        <li class="OurWorks_item">
+          <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
+          <div class="OurWorks_img">
+            <img src="/src/assets/img/01.png" alt="">
+          </div>
+          <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
+          <ul class="item_list item_list-mobile">
             <li class="item_block">
               <span class="block_text">UI / UX</span>
             </li>
@@ -44,32 +28,32 @@ export default {
               <span class="block_text">Pitch deck & presentations</span>
             </li>
           </ul>
-        </div>
-      </li>
-      <li class="OurWorks_item">
-        <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
-        <div class="OurWorks_img">
-          <img src="/src/assets/img/02.png" alt="">
-        </div>
-        <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
-        <ul class="item_list item_list-mobile">
-          <li class="item_block">
-            <span class="block_text">UI / UX</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Mobile apps</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">CRM & Fleet dashboards</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Pitch deck & presentations</span>
-          </li>
-        </ul>
-        <div class="item_desc">
-          <h4 class="item_title">Drive Point, 2018</h4>
-          <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
-          <ul class="item_list">
+          <div class="item_desc">
+            <h4 class="item_title">Quorum, 2021</h4>
+            <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
+            <ul class="item_list">
+              <li class="item_block">
+                <span class="block_text">UI / UX</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Mobile apps</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">CRM & Fleet dashboards</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Pitch deck & presentations</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="OurWorks_item">
+          <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
+          <div class="OurWorks_img">
+            <img src="/src/assets/img/02.png" alt="">
+          </div>
+          <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
+          <ul class="item_list item_list-mobile">
             <li class="item_block">
               <span class="block_text">UI / UX</span>
             </li>
@@ -83,32 +67,32 @@ export default {
               <span class="block_text">Pitch deck & presentations</span>
             </li>
           </ul>
-        </div>
-      </li>
-      <li class="OurWorks_item">
-        <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
-        <div class="OurWorks_img">
-          <img src="/src/assets/img/03.png" alt="">
-        </div>
-        <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
-        <ul class="item_list item_list-mobile">
-          <li class="item_block">
-            <span class="block_text">UI / UX</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Mobile apps</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">CRM & Fleet dashboards</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Pitch deck & presentations</span>
-          </li>
-        </ul>
-        <div class="item_desc">
-          <h4 class="item_title">Tri Tochki, 2019</h4>
-          <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
-          <ul class="item_list">
+          <div class="item_desc">
+            <h4 class="item_title">Drive Point, 2018</h4>
+            <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
+            <ul class="item_list">
+              <li class="item_block">
+                <span class="block_text">UI / UX</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Mobile apps</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">CRM & Fleet dashboards</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Pitch deck & presentations</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="OurWorks_item">
+          <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
+          <div class="OurWorks_img">
+            <img src="/src/assets/img/03.png" alt="">
+          </div>
+          <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
+          <ul class="item_list item_list-mobile">
             <li class="item_block">
               <span class="block_text">UI / UX</span>
             </li>
@@ -122,32 +106,32 @@ export default {
               <span class="block_text">Pitch deck & presentations</span>
             </li>
           </ul>
-        </div>
-      </li>
-      <li class="OurWorks_item">
-        <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
-        <div class="OurWorks_img">
-          <img src="/src/assets/img/04.png" alt="">
-        </div>
-        <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
-        <ul class="item_list item_list-mobile">
-          <li class="item_block">
-            <span class="block_text">UI / UX</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Mobile apps</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">CRM & Fleet dashboards</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Pitch deck & presentations</span>
-          </li>
-        </ul>
-        <div class="item_desc">
-          <h4 class="item_title">Japan Museum, 2022</h4>
-          <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
-          <ul class="item_list">
+          <div class="item_desc">
+            <h4 class="item_title">Tri Tochki, 2019</h4>
+            <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
+            <ul class="item_list">
+              <li class="item_block">
+                <span class="block_text">UI / UX</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Mobile apps</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">CRM & Fleet dashboards</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Pitch deck & presentations</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="OurWorks_item">
+          <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
+          <div class="OurWorks_img">
+            <img src="/src/assets/img/04.png" alt="">
+          </div>
+          <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
+          <ul class="item_list item_list-mobile">
             <li class="item_block">
               <span class="block_text">UI / UX</span>
             </li>
@@ -161,32 +145,32 @@ export default {
               <span class="block_text">Pitch deck & presentations</span>
             </li>
           </ul>
-        </div>
-      </li>
-      <li class="OurWorks_item">
-        <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
-        <div class="OurWorks_img">
-          <img src="/src/assets/img/05.png" alt="">
-        </div>
-        <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
-        <ul class="item_list item_list-mobile">
-          <li class="item_block">
-            <span class="block_text">UI / UX</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Mobile apps</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">CRM & Fleet dashboards</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Pitch deck & presentations</span>
-          </li>
-        </ul>
-        <div class="item_desc">
-          <h4 class="item_title">Apartlend, 2020</h4>
-          <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
-          <ul class="item_list">
+          <div class="item_desc">
+            <h4 class="item_title">Japan Museum, 2022</h4>
+            <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
+            <ul class="item_list">
+              <li class="item_block">
+                <span class="block_text">UI / UX</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Mobile apps</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">CRM & Fleet dashboards</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Pitch deck & presentations</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="OurWorks_item">
+          <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
+          <div class="OurWorks_img">
+            <img src="/src/assets/img/05.png" alt="">
+          </div>
+          <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
+          <ul class="item_list item_list-mobile">
             <li class="item_block">
               <span class="block_text">UI / UX</span>
             </li>
@@ -200,32 +184,32 @@ export default {
               <span class="block_text">Pitch deck & presentations</span>
             </li>
           </ul>
-        </div>
-      </li>
-      <li class="OurWorks_item">
-        <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
-        <div class="OurWorks_img">
-          <img src="/src/assets/img/06.png" alt="">
-        </div>
-        <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
-        <ul class="item_list item_list-mobile">
-          <li class="item_block">
-            <span class="block_text">UI / UX</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Mobile apps</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">CRM & Fleet dashboards</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Pitch deck & presentations</span>
-          </li>
-        </ul>
-        <div class="item_desc">
-          <h4 class="item_title">FinoMarket, 2020</h4>
-          <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
-          <ul class="item_list">
+          <div class="item_desc">
+            <h4 class="item_title">Apartlend, 2020</h4>
+            <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
+            <ul class="item_list">
+              <li class="item_block">
+                <span class="block_text">UI / UX</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Mobile apps</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">CRM & Fleet dashboards</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Pitch deck & presentations</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="OurWorks_item">
+          <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
+          <div class="OurWorks_img">
+            <img src="/src/assets/img/06.png" alt="">
+          </div>
+          <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
+          <ul class="item_list item_list-mobile">
             <li class="item_block">
               <span class="block_text">UI / UX</span>
             </li>
@@ -239,32 +223,32 @@ export default {
               <span class="block_text">Pitch deck & presentations</span>
             </li>
           </ul>
-        </div>
-      </li>
-      <li class="OurWorks_item">
-        <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
-        <div class="OurWorks_img">
-          <img src="/src/assets/img/07.png" alt="">
-        </div>
-        <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
-        <ul class="item_list item_list-mobile">
-          <li class="item_block">
-            <span class="block_text">UI / UX</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Mobile apps</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">CRM & Fleet dashboards</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Pitch deck & presentations</span>
-          </li>
-        </ul>
-        <div class="item_desc">
-          <h4 class="item_title">APLA Blockchain, 2018</h4>
-          <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
-          <ul class="item_list">
+          <div class="item_desc">
+            <h4 class="item_title">FinoMarket, 2020</h4>
+            <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
+            <ul class="item_list">
+              <li class="item_block">
+                <span class="block_text">UI / UX</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Mobile apps</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">CRM & Fleet dashboards</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Pitch deck & presentations</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="OurWorks_item">
+          <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
+          <div class="OurWorks_img">
+            <img src="/src/assets/img/07.png" alt="">
+          </div>
+          <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
+          <ul class="item_list item_list-mobile">
             <li class="item_block">
               <span class="block_text">UI / UX</span>
             </li>
@@ -278,32 +262,32 @@ export default {
               <span class="block_text">Pitch deck & presentations</span>
             </li>
           </ul>
-        </div>
-      </li>
-      <li class="OurWorks_item">
-        <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
-        <div class="OurWorks_img">
-          <img src="/src/assets/img/08.png" alt="">
-        </div>
-        <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
-        <ul class="item_list item_list-mobile">
-          <li class="item_block">
-            <span class="block_text">UI / UX</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Mobile apps</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">CRM & Fleet dashboards</span>
-          </li>
-          <li class="item_block">
-            <span class="block_text">Pitch deck & presentations</span>
-          </li>
-        </ul>
-        <div class="item_desc">
-          <h4 class="item_title">TES Ecosystem, 2022</h4>
-          <span class="item_text">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
-          <ul class="item_list">
+          <div class="item_desc">
+            <h4 class="item_title">APLA Blockchain, 2018</h4>
+            <span class="item_text">Enterprise and government platform with ERP tools ande-sign solutions based on blockchain network.</span>
+            <ul class="item_list">
+              <li class="item_block">
+                <span class="block_text">UI / UX</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Mobile apps</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">CRM & Fleet dashboards</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Pitch deck & presentations</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="OurWorks_item">
+          <h4 class="item_title item_title-mobile">TES Ecosystem, 2022</h4>
+          <div class="OurWorks_img">
+            <img src="/src/assets/img/08.png" alt="">
+          </div>
+          <span class="item_text item_text-mobile">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
+          <ul class="item_list item_list-mobile">
             <li class="item_block">
               <span class="block_text">UI / UX</span>
             </li>
@@ -317,9 +301,27 @@ export default {
               <span class="block_text">Pitch deck & presentations</span>
             </li>
           </ul>
-        </div>
-      </li>
-    </ul>
+          <div class="item_desc">
+            <h4 class="item_title">TES Ecosystem, 2022</h4>
+            <span class="item_text">The ecosystem of car services based with generative app design and IoT data algorithms.</span>
+            <ul class="item_list">
+              <li class="item_block">
+                <span class="block_text">UI / UX</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Mobile apps</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">CRM & Fleet dashboards</span>
+              </li>
+              <li class="item_block">
+                <span class="block_text">Pitch deck & presentations</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
 </template>
 
@@ -332,6 +334,14 @@ export default {
     height: 100%;
     padding-bottom: 90px;
   }
+  .container {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+  }
   .item_title-mobile {
     display: none;
   }
@@ -340,13 +350,14 @@ export default {
     font-size: 40px;
     line-height: 140%;
     margin-bottom: 60px;
+    font-weight: bold;
   }
   .OurWorks_list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 100px;
-    width: 50%;
+    width: 70%;
     flex-wrap: wrap;
   }
   .OurWorks_item {
@@ -405,13 +416,16 @@ export default {
   }
   @media (max-width: 420px) {
       section {
-        padding: 40px 0 20px;
         background-color: #F9F9F9;
+        padding: 0;
       }
+    .container {
+      padding: 40px 0 20px;
+    }
     .OurWorks_list {
       flex-wrap: nowrap;
       overflow: auto;
-      gap: 0;
+      gap: 40px;
       width: 100%;
       justify-content: flex-start;
       padding-left: 55px;
@@ -422,18 +436,22 @@ export default {
       gap: 20px;
       display: flex;
       flex-direction: column;
+      max-width: 70vw;
+      padding-bottom: 15px;
     }
-    .OurWorks_img:hover {
+    .OurWorks_item:hover .OurWorks_img {
       filter: blur(0);
       z-index: 1;
     }
     .item_desc{
       display: none;
-      pointer-events: none;
     }
-    .OurWorks_img:hover ~ .item_desc {
+    .OurWorks_item:hover .item_desc {
       display: none;
       z-index: 2;
+    }
+    .OurWorks_item:hover .OurWorks_img ~ .item_desc{
+      display: none;
     }
     .item_title-mobile {
       display: inline;
@@ -447,6 +465,10 @@ export default {
     .item_text-mobile {
       display: flex;
       margin-left: 0;
+    }
+    .OurWorks_title {
+      padding-left: 8%;
+      width: 100%;
     }
   }
 </style>

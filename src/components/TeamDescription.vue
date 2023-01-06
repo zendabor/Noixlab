@@ -1,10 +1,9 @@
 <script>
-import BlueCycle from "@/components/icons/BlueCycle.vue";
 import Elipce from "@/components/icons/Elipce.vue";
 
 export default {
   name: "TeamDescription",
-  components: {Elipce, BlueCycle,}
+  components: {Elipce}
 }
 </script>
 <template>

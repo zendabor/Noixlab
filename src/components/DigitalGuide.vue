@@ -39,6 +39,7 @@ export default {
     width: 50%;
     margin-left: 100px;
     margin-bottom: 150px;
+    max-width: 1440px;
   }
   .DigitalGuide_title{
     font-size: 40px;

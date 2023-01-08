@@ -3,7 +3,15 @@ import GraphFooter from "@/components/icons/GraphFooter.vue";
 
 export default {
   name: "CompanyContacts",
-  components: {GraphFooter}
+  components: {GraphFooter},
+  data(){
+    return {textLink: 'hi@noixlab.com'}
+  },
+  methods: {
+    copy(){
+      navigator.clipboard.writeText(this.textLink)
+    }
+  }
 }
 </script>
 <template>
@@ -15,7 +23,7 @@ export default {
       </div>
       <div class="contact_wrap">
         <h3 class="contact_title">Let’s Talk</h3>
-        <a href="mailto:hi@noixlab.com" type="email" class="contact_email">hi@noixlab.com</a>
+        <a  type="email" class="contact_email" @click="copy()">{{textLink}}</a>
       </div>
       <ul class="contact_list">
         <li class="contact_item">

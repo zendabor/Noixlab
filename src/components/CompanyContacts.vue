@@ -95,7 +95,7 @@ export default {
   .contact_item{
     position: relative;
     flex: 1;
-    text-align: end;
+    text-align: center;
   }
   .contact_item:hover::before{
     content: "";
@@ -235,7 +235,6 @@ export default {
       grid-row-start: 2;
     }
     .contact_item {
-      text-align: center;
       flex: 0;
     }
     .contact_item  a{

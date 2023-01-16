@@ -429,6 +429,7 @@ export default {
       width: 100%;
       justify-content: flex-start;
       padding-left: 55px;
+      max-width: 100vw;
     }
     .OurWorks_item {
       flex: 0 0 95%;
